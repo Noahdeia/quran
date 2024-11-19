@@ -1,0 +1,455 @@
+/* إعدادات الصفحة العامة */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* رأس الصفحة */
+/* إعدادات شريط التنقل الحديث */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* الشريط الرئيسي */
+.navbar {
+    background-color: transparent; /* خلفية شفافة */
+    position: fixed;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #f0f0f0; /* اللون الرمادي عند التمرير */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* الشعار */
+.logo img {
+    height: 50px;
+}
+
+/* قائمة التنقل */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    color: #333; /* اللون الرمادي الداكن */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* تأثيرات التمرير */
+.nav-menu a:hover {
+    background-color: #d3d3d3; /* لون رمادي فاتح */
+    color: #000;
+}
+
+.login-btn {
+    background-color: #555;
+    color: #fff;
+}
+
+/* زر القائمة (Hamburger) للأجهزة المحمولة */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #f0f0f0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: right 0.3s ease;
+    }
+
+    .nav-menu.show {
+        right: 0;
+    }
+
+    .nav-menu a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
+
+.hero {
+    background: hsl(180, 33%, 98%);
+    color: #0c0c0c;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero .search-box {
+    margin-top: 20px;
+}
+
+.hero input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #004AAD;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.category-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.category-card h3 {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #b8bbbe;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.select-portion, .repeat-section, .evaluation-section {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00C4B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004AAD;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-section {
+    margin-top: 20px;
+}
+
+/* إعدادات الصفحة العامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    direction: rtl;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* تحسينات على التنسيق */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    text-align: center;
+    direction: rtl;
+}
+
+.navbar {
+    background-color: #009688;
+    padding: 10px;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.options {
+    margin: 20px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#hifz-interface, #talqeen-interface, #assessment {
+    margin-top: 20px;
+}
+/* تنسيق قسم الأحاديث */
+.hadith-section {
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.hadith-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50; 
+}
+
+.hadith-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hadith-card h3 {
+    font-size: 22px;
+    color: #555;
+}
+
+.hadith-card p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.reference {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* تنسيق قسم القرآن الكريم */
+/* إخفاء شريط التنقل */
+.navbar {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* إظهار الشريط عند تقريب السهم على الصفحة */
+body:hover .navbar {
+    opacity: 1;
+}
+
+.quran-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.quran-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#searchAyah {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.sura-list {
+    margin: 20px 0;
+}
+
+.sura-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sura-list li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.sura-list a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sura-list a:hover {
+    background-color: #0056b3;
+}
+
+.ayah-display {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ayah-display h3 {
+    color: #555;
+}
+
+.ayah-display p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
